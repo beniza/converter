@@ -7,6 +7,7 @@
 <meta name="Author1" content="Subhashish" panigrahi="">
 <meta name="Author2" content="Shitikantha" dash="">
 <meta name="Author3" content="Manoj" sahukar="">
+<meta name="Author4" content="BenVar" contact="github.com/beniza"> <!-- Why second name of the contributer is a keyword? --> 
 <title>Shreelipi - Unicode Odia Converter</title>
 
 <script type="text/javascript">
@@ -70,6 +71,9 @@ var array_one = new Array(
 "à" , "ଲ" ,
 "Ü" , "ହ" ,
 "􀁨" , "ତ୍ତ" ,
+"Õ" , "ସ୍ଖ" , // by ben
+"–" , "ର୍ଦ୍ଧ୍ୱ" , // by ben 
+"—" , "ଦ୍ଭୁ" , // by ben 
 
 "L" , "କ" , // ka
 "Q" , "ଖ" , // kha
@@ -152,10 +156,38 @@ var array_one = new Array(
 "u" , "ଫ" ,  // Ta phala
 "Û" , "୍ସ" ,
 
+"^" , "ଙ୍ଘ" ,
+"&" , "" ,
+"􀃗" , "" ,
+
+// to handle the footnote callers
+"􀂁" , "" , // not firing
+"􀀘 " , "" , // not firing 
+"􀃗" , "" , // this is firing
+
 "Ÿ" , "ନ୍ନ" , // nna
 "•" , "ଦ୍ଧ" , // ddha
 "ˆ" , "ତ୍ତ" , // tta
 ";" , "ନ୍ତ" , // nta
+
+// =================== Sections Begings ========================================================
+// The section below is added by Benjamin, to get the ';' behave rightly.
+// it still has issues. We need to find out a way to identify ';' that is part of the Oria text
+// and the actual ';'s in the text. Also find a smarter way of handling this in JS
+"'ନ୍ତ" , "';" , 
+",ନ୍ତ" , ",;" , 
+"0ନ୍ତ" , "0;" , 
+"1ନ୍ତ" , "1;" , 
+"2ନ୍ତ" , "2;" , 
+"3ନ୍ତ" , "3;" , 
+"4ନ୍ତ" , "4;" , 
+"5ନ୍ତ" , "5;" , 
+"6ନ୍ତ" , "6;" , 
+"7ନ୍ତ" , "7;" , 
+"8ନ୍ତ" , "8;" , 
+"9ନ୍ତ" , "9;" , 
+// =================== Sections Eds ============================================================
+
 "􀁣" , "ଣ୍ଡ" , // NDa
 " ß" , "ୟ" , // ya
 "ß" , "ୟ" , // ya
@@ -378,7 +410,7 @@ modified_substring = modified_substring.replace( /ˆ/g , "ତ୍ତ" ) ;
 </table>
 <p style="text-align:center" align="center"><font size="2" face="sans-serif"><span style="color:#606060">You can copy and use the text below in Facebook, E-mail, blogs, websites and <a href="https://or.wikipedia.org/wiki/WP:CS">ODIA WIKIPEDIA.</a></span></font>
 
-<p style="text-align:center" align="center"><span style="color:#515151"><font size="2">Designed by <a href="https://or.wikipedia.org/wiki/User:%E0%AC%B6%E0%AC%BF%E0%AC%A4%E0%AC%BF%E0%AC%95%E0%AC%A3%E0%AD%8D%E0%AC%A0%20%E0%AC%A6%E0%AC%BE%E0%AC%B6" target="_blank" title="Reach to me">Shitikantha Dash</a> and <a href="https://meta.wikimedia.org/wiki/User:Psubhashish" target="_blank" title="Reach to me">Subhashish Panigrahi</a>. Maintained by <a href="http://in.linkedin.com/in/manojsahukar/" target="_blank" title="Reach to me">Manoj Sahukar</a>. Under CC-BY-SA 3.0. Inspired by Rebati converter by Srujanika.<br><a href="https://22bc339da9ca3e2462414546a715752e4c2c5e0d.googledrive.com/host/0B5rBGd680WZFemVLa3RxY0preE0/AkrutiUnicode" target="_blank" title="Click here"> Click here</a><a> for Akruti Sarala-Unicode converter.</a></font></span></p><a>
+<p style="text-align:center" align="center"><span style="color:#515151"><font size="2">Modified by <a href="https://github.com/beniza/" target = "_blank" title="Contact Me">BenVar </a>Designed by <a href="https://or.wikipedia.org/wiki/User:%E0%AC%B6%E0%AC%BF%E0%AC%A4%E0%AC%BF%E0%AC%95%E0%AC%A3%E0%AD%8D%E0%AC%A0%20%E0%AC%A6%E0%AC%BE%E0%AC%B6" target="_blank" title="Reach to me">Shitikantha Dash</a> and <a href="https://meta.wikimedia.org/wiki/User:Psubhashish" target="_blank" title="Reach to me">Subhashish Panigrahi</a>. Maintained by <a href="http://in.linkedin.com/in/manojsahukar/" target="_blank" title="Reach to me">Manoj Sahukar</a>. Under CC-BY-SA 3.0. Inspired by Rebati converter by Srujanika.<br><a href="https://22bc339da9ca3e2462414546a715752e4c2c5e0d.googledrive.com/host/0B5rBGd680WZFemVLa3RxY0preE0/AkrutiUnicode" target="_blank" title="Click here"> Click here</a><a> for Akruti Sarala-Unicode converter.</a></font></span></p><a>
 
 
 
